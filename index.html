@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Surendra Dodda | Software Developer | Fullstack &amp; Web Dev</title>
+  <meta name="description"
+    content="Portfolio of Surendra Dodda – Software Developer, Fullstack Developer, Frontend Developer & Web Development Enthusiast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================ NAV ============================================================ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo"><span class="logo-bracket">&lt;</span>SD<span
+          class="logo-bracket">/&gt;</span></a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#ai-agent">AI Agent</a></li>
+        <li><a href="#github">GitHub</a></li>
+        <li><a href="#linkedin">LinkedIn</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="peacock-toggle" class="peacock-toggle-btn" aria-label="Toggle peacock theme"
+            title="Peacock Theme">
+            🦚
+          </button>
+        </li>
+        <li>
+          <button id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon" id="theme-icon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================ HERO ============================================================ -->
+  <section id="home" class="hero-section">
+    <div class="hero-particles" id="particles"></div>
+    <!-- Hidden file inputs -->
+    <input type="file" id="photoInput" accept="image/*" style="display:none" />
+    <input type="file" id="resumeInput" accept=".pdf,.doc,.docx" style="display:none" />
+
+    <div class="hero-content">
+      <!-- Profile Photo Upload -->
+      <div class="profile-photo-wrap animate-fade-up">
+        <div class="profile-photo" id="profilePhoto">
+          <span class="profile-initials" id="profileInitials">SD</span>
+          <img id="profileImg" src="" alt="Surendra Dodda" style="display:none" />
+        </div>
+        <button class="photo-upload-btn" id="photoUploadBtn" title="Upload your photo">
+          <i class="fas fa-camera"></i>
+        </button>
+      </div>
+
+      <div class="hero-badge animate-fade-up">👋 Available for opportunities</div>
+      <h1 class="hero-name animate-fade-up delay-1">
+        <span class="gradient-text">Surendra Dodda</span>
+      </h1>
+      <p class="hero-tagline animate-fade-up delay-2">
+        Software Developer &nbsp;|&nbsp; Fullstack Developer &nbsp;|&nbsp; Frontend &nbsp;|&nbsp; Web Development
+      </p>
+      <p class="hero-intro animate-fade-up delay-3">
+        Hello, I am <strong>Surendra Dodda</strong>, a Computer Science student passionate about software development,
+        AI systems, and modern web technologies. I enjoy building practical applications that solve real-world problems.
+      </p>
+      <div class="hero-buttons animate-fade-up delay-4">
+        <a href="#projects" class="btn btn-primary"><i class="fas fa-rocket"></i> View Projects</a>
+        <a href="resume.pdf" download id="downloadResumeBtn" class="btn btn-secondary"><i class="fas fa-download"></i>
+          Download Resume</a>
+        <button id="uploadResumeBtn" class="btn btn-upload-resume"><i class="fas fa-upload"></i> Upload Resume</button>
+        <a href="#contact" class="btn btn-outline"><i class="fas fa-envelope"></i> Contact Me</a>
+      </div>
+      <div class="hero-socials animate-fade-up delay-5">
+        <a href="https://github.com/doddasurendra" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/surendranadhdodda" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+        <a href="mailto:surendra709364@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual animate-slide-right">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="code-file">portfolio.java</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">public class</span> <span class="cls">SurendraDodda</span> {
+
+  <span class="kw">String</span> role = <span class="str">"Software Developer"</span>;
+  <span class="kw">String</span> stack = <span class="str">"Fullstack | Frontend"</span>;
+  <span class="kw">String</span> passion = <span class="str">"AI &amp; Web Apps"</span>;
+  <span class="kw">boolean</span> available = <span class="val">true</span>;
+
+  <span class="kw">String</span>[] skills = {
+    <span class="str">"Java"</span>, <span class="str">"Python"</span>,
+    <span class="str">"HTML/CSS/JS"</span>,
+    <span class="str">"Firebase"</span>
+  };
+
+  <span class="fn">void</span> build() {
+    <span class="cm">// Solving real-world problems</span>
+    code.commit(<span class="str">"always"</span>);
+  }
+}</code></pre>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint"><i class="fas fa-chevron-down"></i></a>
+  </section>
+
+  <!-- ============================================================ ABOUT ============================================================ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-text">
+          <span class="section-tag">// about me</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="section-toolbar" data-section="about">
+          <button class="stb-btn stb-upload" data-section="about"><i class="fas fa-upload"></i> Upload</button>
+          <button class="stb-btn stb-add" data-section="about"><i class="fas fa-plus"></i> Add</button>
+          <button class="stb-btn stb-edit" data-section="about"><i class="fas fa-pen"></i> Edit</button>
+          <button class="stb-btn stb-delete" data-section="about"><i class="fas fa-trash"></i> Delete</button>
+          <button class="stb-btn stb-update" data-section="about"><i class="fas fa-save"></i> Update</button>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-summary">
+            I am a <strong>B.Tech Computer Science</strong> student at <strong>Saveetha University, Chennai</strong>,
+            with a deep interest in software development, fullstack web development, frontend engineering, and AI-based
+            applications. I believe in writing clean, efficient code that delivers real value. My goal is to grow into a
+            skilled software developer who can contribute to impactful products.
+          </p>
+
+          <div class="about-details">
+            <div class="detail-item"><i class="fas fa-graduation-cap"></i> B.Tech CS — Saveetha University, Chennai
+            </div>
+            <div class="detail-item"><i class="fas fa-code"></i> Software Developer | Fullstack | Frontend | Web Dev
+            </div>
+            <div class="detail-item"><i class="fas fa-envelope"></i> surendra709364@gmail.com</div>
+            <div class="detail-item"><i class="fas fa-phone"></i> +91 7093640044</div>
+          </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+          <h3 class="subsection-title">Timeline of My Journey</h3>
+          <div class="timeline-items">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-stage">Stage 1</span>
+                <p>Started learning programming</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-stage">Stage 2</span>
+                <p>Learned Java and Python</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-stage">Stage 3</span>
+                <p>Built web development skills</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-stage">Stage 4</span>
+                <p>Created real-world projects</p>
+              </div>
+            </div>
+            <div class="timeline-item active">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-stage">Stage 5</span>
+                <p>Preparing for software developer roles</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="8">0</span>
+          <span class="stat-label">Technologies Learned</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">AI Projects</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">Web Projects</span>
+        </div>
+      </div>
+
+      <!-- Why Hire Me -->
+      <div class="why-hire">
+        <h3 class="subsection-title">Why Hire Me</h3>
+        <div class="why-grid">
+          <div class="why-card"><i class="fas fa-fire"></i>
+            <p>Strong interest in software development</p>
+          </div>
+          <div class="why-card"><i class="fas fa-wrench"></i>
+            <p>Experience building practical projects</p>
+          </div>
+          <div class="why-card"><i class="fas fa-bolt"></i>
+            <p>Quick learner of new technologies</p>
+          </div>
+          <div class="why-card"><i class="fas fa-bullseye"></i>
+            <p>Focused on solving real-world problems</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ SKILLS ============================================================ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-text">
+          <span class="section-tag">// tech stack</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+        </div>
+        <div class="section-toolbar" data-section="skills">
+          <button class="stb-btn stb-upload" data-section="skills"><i class="fas fa-upload"></i> Upload</button>
+          <button class="stb-btn stb-add" data-section="skills"><i class="fas fa-plus"></i> Add</button>
+          <button class="stb-btn stb-edit" data-section="skills"><i class="fas fa-pen"></i> Edit</button>
+          <button class="stb-btn stb-delete" data-section="skills"><i class="fas fa-trash"></i> Delete</button>
+          <button class="stb-btn stb-update" data-section="skills"><i class="fas fa-save"></i> Update</button>
+        </div>
+      </div>
+
+      <div class="skills-category-grid">
+        <!-- Programming Languages -->
+        <div class="skills-category">
+          <h3 class="category-title"><i class="fas fa-code"></i> Programming Languages</h3>
+          <div class="skills-row">
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#f89820">
+                <i class="fab fa-java"></i>
+              </div>
+              <span>Java</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#3776ab">
+                <i class="fab fa-python"></i>
+              </div>
+              <span>Python</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skills-category">
+          <h3 class="category-title"><i class="fas fa-globe"></i> Web Development</h3>
+          <div class="skills-row">
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#e34c26">
+                <i class="fab fa-html5"></i>
+              </div>
+              <span>HTML</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#264de4">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <span>CSS</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#f7df1e; color:#000">
+                <i class="fab fa-js"></i>
+              </div>
+              <span>JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-category">
+          <h3 class="category-title"><i class="fas fa-tools"></i> Tools &amp; Platforms</h3>
+          <div class="skills-row">
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#ff6d00">
+                <i class="fas fa-fire-alt"></i>
+              </div>
+              <span>Firebase</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="65"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#333">
+                <i class="fab fa-github"></i>
+              </div>
+              <span>GitHub</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon" style="background:#375b96">
+                <i class="fas fa-cube"></i>
+              </div>
+              <span>Blender</span>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="55"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ PROJECTS ============================================================ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-text">
+          <span class="section-tag">// featured work</span>
+          <h2 class="section-title">Projects</h2>
+        </div>
+        <div class="section-toolbar" data-section="projects">
+          <button class="stb-btn stb-upload" data-section="projects"><i class="fas fa-upload"></i> Upload</button>
+          <button class="stb-btn stb-add" data-section="projects"><i class="fas fa-plus"></i> Add</button>
+          <button class="stb-btn stb-edit" data-section="projects"><i class="fas fa-pen"></i> Edit</button>
+          <button class="stb-btn stb-delete" data-section="projects"><i class="fas fa-trash"></i> Delete</button>
+          <button class="stb-btn stb-update" data-section="projects"><i class="fas fa-save"></i> Update</button>
+        </div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-image hotel-bg">
+            <div class="project-overlay">
+              <div class="project-type-badge"><i class="fas fa-globe"></i> Web Project</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Hotel Chandamama Website</h3>
+            <p class="project-desc">Developed a responsive website providing hotel information and services, deployed on
+              Firebase Hosting.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-primary" target="_blank"><i class="fas fa-external-link-alt"></i> Live
+                Demo</a>
+              <a href="https://github.com/doddasurendra" class="btn btn-sm btn-outline" target="_blank"><i
+                  class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-image milk-bg">
+            <div class="project-overlay">
+              <div class="project-type-badge"><i class="fas fa-robot"></i> AI Project</div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AI Milk Center Management System</h3>
+            <p class="project-desc">A digital system to manage milk center operations, store customer records, and
+              improve efficiency using AI-based ideas.</p>
+            <div class="project-tech">
+              <span>Java</span><span>AI Concepts</span><span>Database</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/doddasurendra" class="btn btn-sm btn-primary" target="_blank"><i
+                  class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ AI AGENT ============================================================ -->
+  <section id="ai-agent" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-text">
+          <span class="section-tag">// intelligent automation</span>
+          <h2 class="section-title">AI LinkedIn &amp; Job Assistant Agent</h2>
+          <p class="section-subtitle">An intelligent AI assistant that helps manage job searching and professional
+            profile updates.</p>
+        </div>
+        <div class="section-toolbar" data-section="ai-agent">
+          <button class="stb-btn stb-upload" data-section="ai-agent"><i class="fas fa-upload"></i> Upload</button>
+          <button class="stb-btn stb-add" data-section="ai-agent"><i class="fas fa-plus"></i> Add</button>
+          <button class="stb-btn stb-edit" data-section="ai-agent"><i class="fas fa-pen"></i> Edit</button>
+          <button class="stb-btn stb-delete" data-section="ai-agent"><i class="fas fa-trash"></i> Delete</button>
+          <button class="stb-btn stb-update" data-section="ai-agent"><i class="fas fa-save"></i> Update</button>
+        </div>
+      </div>
+
+      <div class="ai-features-grid">
+        <div class="ai-feature"><i class="fas fa-search"></i>
+          <p>Searches software developer jobs daily</p>
+        </div>
+        <div class="ai-feature"><i class="fab fa-linkedin"></i>
+          <p>Suggests LinkedIn profile improvements</p>
+        </div>
+        <div class="ai-feature"><i class="fas fa-pen"></i>
+          <p>Generates professional posts</p>
+        </div>
+        <div class="ai-feature"><i class="fas fa-tasks"></i>
+          <p>Tracks job applications</p>
+        </div>
+        <div class="ai-feature"><i class="fas fa-graduation-cap"></i>
+          <p>Suggests skills to learn</p>
+        </div>
+      </div>
+
+      <!-- Live AI Demo -->
+      <div class="ai-demo">
+        <h3 class="subsection-title">🤖 Live AI Agent Demo</h3>
+        <div class="demo-prompts">
+          <button class="demo-prompt-btn" data-query="find">Find software developer jobs</button>
+          <button class="demo-prompt-btn" data-query="skills">What skills should I learn?</button>
+          <button class="demo-prompt-btn" data-query="explain">Explain the AI job assistant</button>
+        </div>
+        <div class="ai-demo-chat" id="aiDemoChat">
+          <div class="ai-demo-message bot-msg">
+            <i class="fas fa-robot bot-icon"></i>
+            <div class="msg-bubble">Hello! I'm Surendra's AI Job Assistant. Click a prompt above or type your question
+              below!</div>
+          </div>
+        </div>
+        <div class="ai-demo-input">
+          <input type="text" id="aiDemoInput" placeholder="Ask the AI agent anything..." />
+          <button id="aiDemoSend"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ GITHUB ============================================================ -->
+  <section id="github" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-text">
+          <span class="section-tag">// open source</span>
+          <h2 class="section-title">GitHub</h2>
+        </div>
+        <div class="section-toolbar" data-section="github">
+          <button class="stb-btn stb-upload" data-section="github"><i class="fas fa-upload"></i> Upload</button>
+          <button class="stb-btn stb-add" data-section="github"><i class="fas fa-plus"></i> Add</button>
+          <button class="stb-btn stb-edit" data-section="github"><i class="fas fa-pen"></i> Edit</button>
+          <button class="stb-btn stb-delete" data-section="github"><i class="fas fa-trash"></i> Delete</button>
+          <button class="stb-btn stb-update" data-section="github"><i class="fas fa-save"></i> Update</button>
+        </div>
+      </div>
+      <div class="github-content">
+        <div class="github-card">
+          <i class="fab fa-github github-big-icon"></i>
+          <div class="github-info">
+            <h3>doddasurendra</h3>
+            <p>Passionate about building practical applications. Check out my repositories for project code,
+              experiments, and learning exercises.</p>
+            <div class="github-repo-chips">
+              <span><i class="fas fa-code-branch"></i> Hotel Chandamama Website</span>
+              <span><i class="fas fa-code-branch"></i> AI Milk Center System</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/doddasurendra" target="_blank" class="btn btn-primary github-btn">
+          <i class="fab fa-github"></i> View GitHub Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ LINKEDIN ============================================================ -->
+  <section id="linkedin" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-text">
+          <span class="section-tag">// professional network</span>
+          <h2 class="section-title">LinkedIn</h2>
+        </div>
+        <div class="section-toolbar" data-section="linkedin">
+          <button class="stb-btn stb-upload" data-section="linkedin"><i class="fas fa-upload"></i> Upload</button>
+          <button class="stb-btn stb-add" data-section="linkedin"><i class="fas fa-plus"></i> Add</button>
+          <button class="stb-btn stb-edit" data-section="linkedin"><i class="fas fa-pen"></i> Edit</button>
+          <button class="stb-btn stb-delete" data-section="linkedin"><i class="fas fa-trash"></i> Delete</button>
+          <button class="stb-btn stb-update" data-section="linkedin"><i class="fas fa-save"></i> Update</button>
+        </div>
+      </div>
+      <div class="linkedin-content">
+        <div class="linkedin-card">
+          <i class="fab fa-linkedin linkedin-big-icon"></i>
+          <div class="linkedin-info">
+            <h3>Surendra Dodda</h3>
+            <p class="linkedin-headline">Software Developer | Fullstack Developer | Frontend | Web Development
+              Enthusiast</p>
+            <p>Connect with me to grow our professional network, explore collaboration opportunities, and stay updated
+              on my career journey. I believe networking is a key driver of career growth in the tech industry.</p>
+          </div>
+        </div>
+        <a href="https://www.linkedin.com/in/surendranadhdodda" target="_blank" class="btn btn-linkedin">
+          <i class="fab fa-linkedin"></i> View LinkedIn Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ LEARNING ============================================================ -->
+  <section id="learning" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-text">
+          <span class="section-tag">// growth mindset</span>
+          <h2 class="section-title">Learning Journey</h2>
+        </div>
+        <div class="section-toolbar" data-section="learning">
+          <button class="stb-btn stb-upload" data-section="learning"><i class="fas fa-upload"></i> Upload</button>
+          <button class="stb-btn stb-add" data-section="learning"><i class="fas fa-plus"></i> Add</button>
+          <button class="stb-btn stb-edit" data-section="learning"><i class="fas fa-pen"></i> Edit</button>
+          <button class="stb-btn stb-delete" data-section="learning"><i class="fas fa-trash"></i> Delete</button>
+          <button class="stb-btn stb-update" data-section="learning"><i class="fas fa-save"></i> Update</button>
+        </div>
+      </div>
+      <div class="learning-grid">
+        <div class="learning-card">
+          <h3><i class="fas fa-spinner fa-spin"></i> Currently Learning</h3>
+          <ul class="learning-list">
+            <li><i class="fas fa-check-circle"></i> Java backend development</li>
+            <li><i class="fas fa-check-circle"></i> Software engineering practices</li>
+            <li><i class="fas fa-check-circle"></i> AI-powered applications</li>
+          </ul>
+        </div>
+        <div class="learning-card">
+          <h3><i class="fas fa-road"></i> Tech I Want to Learn Next</h3>
+          <ul class="learning-list">
+            <li><i class="fas fa-arrow-right"></i> Spring Boot</li>
+            <li><i class="fas fa-arrow-right"></i> React</li>
+            <li><i class="fas fa-arrow-right"></i> Cloud Computing</li>
+            <li><i class="fas fa-arrow-right"></i> Machine Learning Basics</li>
+          </ul>
+        </div>
+        <div class="learning-card">
+          <h3><i class="fas fa-certificate"></i> Certifications</h3>
+          <div class="cert-badge"><i class="fab fa-python"></i> Python Programming Certification</div>
+        </div>
+        <div class="learning-card">
+          <h3><i class="fas fa-trophy"></i> Achievements</h3>
+          <ul class="learning-list">
+            <li><i class="fas fa-star"></i> Personal software projects</li>
+            <li><i class="fas fa-star"></i> Continuous technical learning</li>
+            <li><i class="fas fa-star"></i> Interest in AI and web development</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Career Goals -->
+      <div class="career-goals">
+        <h3 class="subsection-title">🎯 Career Goals</h3>
+        <div class="goals-grid">
+          <div class="goal-item"><i class="fas fa-laptop-code"></i>
+            <p>Become a skilled software developer</p>
+          </div>
+          <div class="goal-item"><i class="fas fa-brain"></i>
+            <p>Build AI-powered applications</p>
+          </div>
+          <div class="goal-item"><i class="fas fa-chart-line"></i>
+            <p>Continuously improve programming &amp; problem-solving skills</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CONTACT ============================================================ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-text">
+          <span class="section-tag">// get in touch</span>
+          <h2 class="section-title">Contact Me</h2>
+        </div>
+        <div class="section-toolbar" data-section="contact">
+          <button class="stb-btn stb-upload" data-section="contact"><i class="fas fa-upload"></i> Upload</button>
+          <button class="stb-btn stb-add" data-section="contact"><i class="fas fa-plus"></i> Add</button>
+          <button class="stb-btn stb-edit" data-section="contact"><i class="fas fa-pen"></i> Edit</button>
+          <button class="stb-btn stb-delete" data-section="contact"><i class="fas fa-trash"></i> Delete</button>
+          <button class="stb-btn stb-update" data-section="contact"><i class="fas fa-save"></i> Update</button>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:surendra709364@gmail.com">surendra709364@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+917093640044">+91 7093640044</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/doddasurendra" target="_blank">doddasurendra</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/surendranadhdodda" target="_blank">surendranadhdodda</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ FOOTER ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo"><span class="logo-bracket">&lt;</span>SD<span
+              class="logo-bracket">/&gt;</span></a>
+          <p>Software Developer | Fullstack | Frontend | Web Dev</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact-info">
+          <a href="mailto:surendra709364@gmail.com"><i class="fas fa-envelope"></i> surendra709364@gmail.com</a>
+          <a href="tel:+917093640044"><i class="fas fa-phone"></i> +91 7093640044</a>
+          <a href="https://github.com/doddasurendra" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/surendranadhdodda" target="_blank"><i class="fab fa-linkedin"></i>
+            LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Surendra Dodda. All rights reserved.</p>
+        <p>Built with <span style="color:var(--accent)">♥</span> using HTML, CSS &amp; JS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================ CHATBOT ============================================================ -->
+  <div class="chatbot-wrapper" id="chatbotWrapper">
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar"><i class="fas fa-robot"></i></div>
+          <div>
+            <strong>SD Assistant</strong>
+            <span class="chatbot-status">Portfolio AI</span>
+          </div>
+        </div>
+        <div class="chatbot-header-actions">
+          <button id="cmdPaletteBtn" title="Show commands" class="chat-action-btn"><i class="fas fa-magic"></i></button>
+          <button id="closeChatbot" aria-label="Close chatbot"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="chatbot-tabs">
+        <button class="chat-tab active" data-tab="chat">💬 Chat</button>
+        <button class="chat-tab" data-tab="ai">🤖 Portfolio AI</button>
+      </div>
+
+      <!-- CHAT TAB -->
+      <div class="chatbot-tab-panel active" id="tabChat">
+        <div class="chatbot-messages" id="chatbotMessages">
+          <div class="chat-msg bot">
+            <div class="chat-bubble">Hi! 👋 I'm SD Assistant. Ask me about Surendra or switch to <strong>Portfolio
+                AI</strong> tab to edit your portfolio with voice commands!</div>
+          </div>
+          <div class="chat-quick-replies">
+            <button class="quick-reply" data-msg="Who is Surendra?">Who is Surendra?</button>
+            <button class="quick-reply" data-msg="What projects does he have?">His projects</button>
+            <button class="quick-reply" data-msg="How can I contact him?">Contact</button>
+          </div>
+        </div>
+        <div class="chatbot-input">
+          <input type="text" id="chatInput" placeholder="Type a message..." />
+          <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+
+      <!-- PORTFOLIO AI TAB -->
+      <div class="chatbot-tab-panel" id="tabAi">
+        <div class="ai-edit-messages" id="aiEditMessages">
+          <div class="chat-msg bot">
+            <div class="chat-bubble">
+              ✨ <strong>Portfolio AI</strong> — Tell me what to add or change!<br><br>
+              Examples:<br>
+              • <em>add project React Dashboard</em><br>
+              • <em>add skill Docker</em><br>
+              • <em>add certification AWS Cloud</em><br>
+              • <em>add achievement Won Hackathon</em><br>
+              • <em>add goal Learn React</em><br>
+              • <em>add learning GraphQL</em><br>
+              • <em>update tagline to Full Stack Developer</em><br>
+              • <em>show commands</em>
+            </div>
+          </div>
+        </div>
+        <div class="chatbot-input">
+          <input type="text" id="aiEditInput" placeholder="Tell me what to add..." />
+          <button id="aiEditSend"><i class="fas fa-wand-magic-sparkles"></i></button>
+        </div>
+      </div>
+
+      <!-- Command Palette -->
+      <div class="cmd-palette" id="cmdPalette">
+        <div class="cmd-palette-header">
+          <i class="fas fa-magic"></i> Portfolio AI Commands
+          <button id="closeCmdPalette"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cmd-palette-body">
+
+          <!-- ADD -->
+          <div class="cmd-group">
+            <div class="cmd-group-title">➕ Add</div>
+            <code class="cmd-example"
+              data-cmd="add project React Dashboard | A real-time dashboard | React, Firebase">add project React Dashboard | A real-time dashboard | React, Firebase</code>
+            <code class="cmd-example" data-cmd="add skill Docker">add skill Docker</code>
+            <code class="cmd-example"
+              data-cmd="add certification AWS Cloud Practitioner">add certification AWS Cloud Practitioner</code>
+            <code class="cmd-example"
+              data-cmd="add achievement Won college hackathon 2025">add achievement Won college hackathon 2025</code>
+            <code class="cmd-example" data-cmd="add goal Master system design">add goal Master system design</code>
+            <code class="cmd-example" data-cmd="add learning GraphQL">add learning GraphQL</code>
+          </div>
+
+          <!-- DELETE -->
+          <div class="cmd-group">
+            <div class="cmd-group-title">🗑️ Delete</div>
+            <code class="cmd-example" data-cmd="delete project [Title]">delete project React Dashboard</code>
+            <code class="cmd-example" data-cmd="delete skill [Name]">delete skill Docker</code>
+            <code class="cmd-example"
+              data-cmd="delete certification [Name]">delete certification AWS Cloud Practitioner</code>
+            <code class="cmd-example"
+              data-cmd="delete achievement [Text]">delete achievement Won college hackathon 2025</code>
+            <code class="cmd-example" data-cmd="delete goal [Text]">delete goal Master system design</code>
+            <code class="cmd-example" data-cmd="delete learning [Tech]">delete learning GraphQL</code>
+          </div>
+
+          <!-- EDIT -->
+          <div class="cmd-group">
+            <div class="cmd-group-title">✏️ Edit</div>
+            <code class="cmd-example"
+              data-cmd="edit project Hotel | Hotel New Name | Updated description | HTML, CSS, Firebase">edit project Hotel | Hotel Chandamama | New description | HTML, Firebase</code>
+            <code class="cmd-example" data-cmd="edit skill Java to Spring Boot">edit skill Java to Spring Boot</code>
+            <code class="cmd-example"
+              data-cmd="edit certification Python to Java Certification">edit certification Python to Java Certification</code>
+            <code class="cmd-example"
+              data-cmd="edit achievement personal software to Full-Stack Projects">edit achievement personal software to Full-Stack Projects</code>
+            <code class="cmd-example"
+              data-cmd="edit goal skilled software to Senior Developer">edit goal skilled software to Senior Developer</code>
+            <code class="cmd-example" data-cmd="edit learning React to Next.js">edit learning React to Next.js</code>
+          </div>
+
+          <!-- UPDATE -->
+          <div class="cmd-group">
+            <div class="cmd-group-title">🔄 Update</div>
+            <code class="cmd-example"
+              data-cmd="update tagline to Full Stack Developer | React | Node.js">update tagline to Full Stack Developer | React | Node.js</code>
+            <code class="cmd-example"
+              data-cmd="update about to [Your bio text]">update about to I am a passionate full-stack developer...</code>
+            <code class="cmd-example"
+              data-cmd="update email to [your@email.com]">update email to myemail@gmail.com</code>
+            <code class="cmd-example" data-cmd="update phone to [+91 xxxxxxxxxx]">update phone to +91 9876543210</code>
+            <code class="cmd-example" data-cmd="update name to [Your Name]">update name to Surendra Dodda</code>
+            <code class="cmd-example"
+              data-cmd="update intro to [Your intro text]">update intro to Hello, I am a software developer...</code>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <button class="chatbot-fab" id="chatbotFab" aria-label="Open chatbot">
+      <i class="fas fa-comment-dots"></i>
+      <span class="chatbot-badge">1</span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
