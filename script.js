@@ -422,18 +422,18 @@ const botKnowledge = {
   ai: ['ai agent', 'job assistant', 'linkedin assistant', 'ai project'],
   contact: ['contact', 'email', 'phone', 'reach', 'call'],
   goal: ['goal', 'career', 'dream', 'aspire', 'future'],
-  edu: ['education', 'university', 'college', 'degree', 'saveetha', 'btech'],
+  edu: ['education', 'university', 'college', 'degree', 'saveetha', 'be', 'bachelor'],
 };
 
 const botAnswers = {
   greet: `👋 Hello! I'm SD Assistant — Surendra's portfolio bot. How can I help you today?\n\nYou can ask me about:\n• His projects\n• Skills & technologies\n• How to contact him`,
-  who: `🙋 Surendra Dodda is a B.Tech Computer Science student at Saveetha University, Chennai. He is passionate about Java development, web development, and AI-powered applications. He enjoys building practical software that solves real-world problems.`,
+  who: `🙋 Surendra Dodda is a B.E Bachelor of engineering in Computer Science student at Saveetha University, Chennai. He is passionate about Java development, web development, and AI-powered applications. He enjoys building practical software that solves real-world problems.`,
   proj: `🚀 Surendra has 2 main projects:\n\n1. 🏨 Hotel Chandamama Website\n   A responsive hotel info website built with HTML, CSS, JS & Firebase.\n\n2. 🤖 AI Milk Center Management System\n   A digital system to manage milk center operations using AI-based ideas.`,
   tech: `💻 Surendra's tech stack:\n\n• Languages: Java, Python\n• Web: HTML, CSS, JavaScript\n• Tools: Firebase, GitHub, Blender\n• Learning: Spring Boot, React, ML basics`,
   ai: `🤖 The AI LinkedIn & Job Assistant is Surendra's AI project that:\n✅ Searches developer jobs daily\n✅ Suggests LinkedIn improvements\n✅ Generates professional posts\n✅ Tracks job applications\n✅ Recommends skills to learn`,
   contact: `📬 You can reach Surendra at:\n\n📧 surendra709364@gmail.com\n📱 +91 7093640044\n🔗 LinkedIn: linkedin.com/in/surendranadhdodda\n💻 GitHub: github.com/doddasurendra`,
   goal: `🎯 Surendra's career goals:\n1. Become a skilled software developer\n2. Build AI-powered applications\n3. Continuously improve programming skills`,
-  edu: `🎓 Surendra is pursuing a B.Tech in Computer Science at Saveetha University, Chennai — with a focus on Java development and AI-based applications.`,
+  edu: `🎓 Surendra is pursuing a B.E Bachelor of engineering in Computer Science at Saveetha University, Chennai — with a focus on Java development and AI-based applications.`,
   default: `🤔 I'm not sure about that, but I can tell you about:\n• Surendra's projects\n• His skills & tech stack\n• His AI job assistant project\n• How to contact him\n\nJust ask!`,
 };
 
